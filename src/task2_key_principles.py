@@ -11,8 +11,8 @@ def create_scatter_plot(data):
     Parameters:
     data (DataFrame): A DataFrame containing 'x' and 'y' columns.
     """
-    fig, _ = plt.subplots()
-    pass
+    fig, ax = plt.subplots()
+    sns.scatterplot(data=data, x='x', y='y', ax=ax)
     return fig
 
 
